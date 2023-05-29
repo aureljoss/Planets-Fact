@@ -1,5 +1,11 @@
+/* Overall styles */
+
 html {
     font-family: 'League Spartan', sans-serif;
+    background-color: rgb(7, 7, 36);
+    color:rgb(255,255,255);
+    background-image: url(/assets/background-stars.svg);
+    margin: 0% 2%;
 }
 
 h1{
@@ -26,3 +32,38 @@ h4{
     line-height: 25px;
 }
 
+p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* Individual styles */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    }
+
+nav li{
+    margin:0px 10px;
+}
+
+#main-section{
+    display: flex;
+    width:100%;
+}
+
+#description{
+    width:20%;
+    margin-right:10%;
+}
+
+#img{
+    margin:auto;
+}
