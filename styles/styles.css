@@ -59,6 +59,11 @@ nav li{
     letter-spacing: 1px;
 }
 
+nav li:hover{ 
+    color:  hsla(0,0%,100%,100%);
+    cursor: pointer;
+}
+
 #main-section{
     display: flex;
     width:100%;
@@ -76,14 +81,17 @@ nav li{
 
 .menu{
     list-style: none;
+    margin-top:10%;
 }
 
 .menu li{
-    border: 1px solid white;
+    border: 1px solid  hsla(0,0%,100%,40%);
     width: 100%;
     margin-top:1rem;
     text-transform: uppercase;
     padding-left: 20px;
+    cursor: pointer;
+
 }
 
 .number{
@@ -94,13 +102,13 @@ nav li{
 .data{
     display:flex;
     justify-content: space-between;
-    margin-right:10%;
+    margin: 0% 10%;
 }
 
 .data div{
-    width:16vw;
-    border: 1px solid white;
-    padding: 20px;
+    width:14vw;
+    border: 1px solid hsla(0,0%,100%,40%);
+    padding: 10px 20px;
     text-transform: uppercase;
     letter-spacing: 2.6px;
 }
@@ -118,5 +126,17 @@ nav li{
 }
 
 #structure, #geology{
+    display:none;
+}
+
+.menu li:hover{
+    background-color: rgb(56,56,79);
+}
+
+.menu li:active{
+    background-color: rgb(65,158,187);
+}
+
+#internal-structure-img, #surface-geology-img {
     display:none;
 }
