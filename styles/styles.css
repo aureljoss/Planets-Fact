@@ -4,7 +4,7 @@ html {
     font-family: 'League Spartan', sans-serif;
     background-color: rgb(7, 7, 36);
     color:rgb(255,255,255);
-    background-image: url(/assets/background-stars.svg);
+    background-image: url(./assets/background-stars.svg);
     margin: 0% 2%;
 }
 
@@ -67,12 +67,12 @@ nav li:hover{
 #main-section{
     display: flex;
     width:100%;
+    height:70vh;
 }
 
 #description{
     width:20%;
     margin-right:10%;
-    height:70vh;
 }
 
 #img{
@@ -82,6 +82,7 @@ nav li:hover{
 .menu{
     list-style: none;
     margin-top:10%;
+    padding-left: 0;
 }
 
 .menu li{
