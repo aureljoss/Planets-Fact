@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
-<script type=“text/javascript” src="scripts/app.js" defer></script>
+<script src="scripts/app.js" defer></script>
  
   <title>Planets fact site</title>
 </head>
@@ -31,14 +31,16 @@
   </header>
   <div id="main-section">
     <div id="img">
-      <img id="overview-img" src="./assets/planet-mercury.svg" alt="Image of Mercury">
-      <img id="internal-structure-img" src="./assets/planet-mercury-internal.svg" alt="Image of internal structure of Mercury">
-      <img id="surface-geology-img" src="./assets/geology-mercury.png" alt="geology of mercury">
-    </div>
+      <img class="images" id="overview-img" src="./assets/planet-mercury.svg" alt="Image of Mercury">
+      <img class="images" id="internal-structure-img" src="./assets/planet-mercury-internal.svg" alt="Image of internal structure of Mercury">
+      <div id="relative-positioning">
+        <img id="surface-geology-img" src="./assets/geology-mercury.png" alt="geology of mercury">
+      </div>  
+      </div>
     <div id="description">
       <h1>Mercury</h1>
       <div id="overview">
-        <p>Mercury is the smallest planet in the Solar System and the closest 
+        <p id="text-description">Mercury is the smallest planet in the Solar System and the closest 
         to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
         shortest of all the Sun's planets. Mercury is one of four terrestrial 
         planets in the Solar System, and is a rocky body like Earth.</p>
@@ -50,7 +52,7 @@
       <div id="structure">
         <!-- Internal Structure Content Start -->
 
-        <p class="internal-tructure">Mercury appears to have a solid silicate crust and mantle overlying a 
+        <p class="internal-structure">Mercury appears to have a solid silicate crust and mantle overlying a 
         solid, iron sulfide outer core layer, a deeper liquid core layer, and 
         a solid inner core. The planet's density is the second highest in the 
         Solar System at 5.427 g/cm3 , only slightly less than Earth's density. </p>
@@ -74,7 +76,7 @@
       <ul class="menu">
         <li id="showOverview"><h3><span class="number">01</span> Overview</h3></li>
         <li id="showStructure"><h3><span class="number">02</span> Internal Structure</h3></li>
-        <li id="showGeology"><h3><span class="number">03</span> Surface Geology</h3></li>
+        <li  id="showGeology"><h3><span class="number">03</span> Surface Geology</h3></li>
       </ul>
     </div>
   </div>
