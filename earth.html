@@ -1,63 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Earth
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/app.js" defer></script>
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <header>
+      <h2>The Planets</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Mercury</a></li>
+          <li><a href="venus.html">Venus</a></li>
+          <li><a href="earth.html">Earth</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="saturn.html">Saturn</a></li>
+          <li><a href="uranus.html">Uranus</a></li>
+          <li><a href="neptune.html">Neptune</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main-section">
+      <div id="img">
+        <img
+          class="images"
+          id="overview-img"
+          src="./assets/planet-earth.svg"
+          alt="Image of Earth"
+        />
+        <img
+          class="images"
+          id="internal-structure-img"
+          src="./assets/planet-earth-internal.svg"
+          alt="Image of internal structure of Earth"
+        />
+        <div id="relative-positioning">
+          <img
+            id="surface-geology-img"
+            src="./assets/geology-earth.png"
+            alt="geology of Earth"
+          />
+        </div>
+      </div>
+      <div id="description">
+      <h1>Earth</h1>
+      <div id="overview">
+        <!-- Overview Content Start -->
+        <p id="text-description">
+          Third planet from the Sun and the only known planet to harbor life.
+          About 29.2% of Earth's surface is land with remaining 70.8% is covered
+          with water. Earth's distance from the Sun, physical properties and
+          geological history have allowed life to evolve and thrive.
+        </p>
+        <p class="source">
+          Source: <a href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a></p>
+        </p>
 
-  <!-- Overview Content Start -->
+        <!-- Overview Content End -->
+      </div>
+      <div id="structure">
+      <!-- Internal Structure Content Start -->
 
-  Third planet from the Sun and the only known planet to harbor life. 
-  About 29.2% of Earth's surface is land with remaining 70.8% is 
-  covered with water. Earth's distance from the Sun, physical properties 
-  and geological history have allowed life to evolve and thrive.
+      <p class="internal-structure">Earth's interior, like that of the other terrestrial planets, is divided
+      into layers by their chemical or physical (rheological) properties. The
+      outer layer is a chemically distinct silicate solid crust, which is
+      underlain by a highly viscous solid mantle. </p>
+      <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Earth#Internal_structure">Wikipedia</a></p>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+      <!-- Internal Structure Content End -->
+        </div>
+        <div id="geology">
+      <!-- Surface Geology Content Start -->
 
-  <!-- Overview Content End -->
+      <p class="surface-geology">The total surface area of Earth is about 510 million km2. The continental
+      crust consists of lower density material such as the igneous rocks granite
+      and andesite. Less common is basalt, a denser volcanic rock that is the
+      primary constituent of the ocean floors.</p>
+      <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Earth#Surface"> Wikipedia </a></p>
 
-  <!-- Internal Structure Content Start -->
+      <!-- Surface Geology Content End -->
+        </div>
+        <ul class="menu">
+          <li id="showOverview">
+            <h3><span class="number">01</span> Overview</h3>
+          </li>
+          <li id="showStructure">
+            <h3><span class="number">02</span> Internal Structure</h3>
+          </li>
+          <li id="showGeology">
+            <h3><span class="number">03</span> Surface Geology</h3>
+          </li>
+        </ul>
+    </div>
+    </div>
+    <div class="data">
+      <div class="data-individual">
+        <p>Rotation Time</p>
+        <h2>0.99 Days</h2>
+      </div>
+      <div class="data-individual">
+        <p>Revolution Time</p>
+        <h2>365.26 Days</h2>
+      </div>
+      <div class="data-individual">
+        <p>Radius</p>
+        <h2>6,371 KM</h2>
+      </div>
+      <div class="data-individual">
+        <p>Average Temp.</p>
+        <h2>16°c</h2>
+      </div>
+    </div>
 
-  Earth's interior, like that of the other terrestrial planets, is divided 
-  into layers by their chemical or physical (rheological) properties. The 
-  outer layer is a chemically distinct silicate solid crust, which is 
-  underlain by a highly viscous solid mantle.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The total surface area of Earth is about 510 million km2. The continental 
-  crust consists of lower density material such as the igneous rocks granite 
-  and andesite. Less common is basalt, a denser volcanic rock that is the 
-  primary constituent of the ocean floors.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  0.99 Days
-
-  Revolution Time
-  365.26 Days
-
-  Radius
-  6,371 KM
-
-  Average Temp.
-  16°c
-</body>
+  </body>
 </html>
