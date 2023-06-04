@@ -15,9 +15,9 @@ showOverview.addEventListener("click", () => {
   overview.style.display = "block";
   internal.style.display = "none";
   surface.style.display = "none";
-  showOverview.style.backgroundColor="rgb(65, 158, 187)";
-  showGeology.style.backgroundColor="";
-  showStructure.style.backgroundColor="";
+  showOverview.style.backgroundColor = "rgb(65, 158, 187)";
+  showGeology.style.backgroundColor = "";
+  showStructure.style.backgroundColor = "";
 });
 
 showStructure.addEventListener("click", () => {
@@ -27,9 +27,9 @@ showStructure.addEventListener("click", () => {
   overview.style.display = "none";
   internal.style.display = "block";
   surface.style.display = "none";
-  showStructure.style.backgroundColor="rgb(65, 158, 187)";
-  showOverview.style.backgroundColor="";
-  showGeology.style.backgroundColor="";
+  showStructure.style.backgroundColor = "rgb(65, 158, 187)";
+  showOverview.style.backgroundColor = "";
+  showGeology.style.backgroundColor = "";
 });
 
 showGeology.addEventListener("click", () => {
@@ -39,6 +39,7 @@ showGeology.addEventListener("click", () => {
   overview.style.display = "block";
   internal.style.display = "none";
   surface.style.display = "block";
-  showGeology.style.backgroundColor="rgb(65, 158, 187)";
-  showStructure.style.backgroundColor="";
+  showGeology.style.backgroundColor = "rgb(65, 158, 187)";
+  showStructure.style.backgroundColor = "";
+  showOverview.style.backgroundColor = "";
 });
