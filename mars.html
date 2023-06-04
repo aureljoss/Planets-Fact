@@ -1,63 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Mars
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/app.js" defer></script>
+    <title>Planets fact site</title>
+  </head>
+  <body>
+    <header>
+      <h2>The Planets</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Mercury</a></li>
+          <li><a href="venus.html">Venus</a></li>
+          <li><a href="earth.html">Earth</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="saturn.html">Saturn</a></li>
+          <li><a href="uranus.html">Uranus</a></li>
+          <li><a href="neptune.html">Neptune</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main-section">
+      <div id="img">
+        <img
+          class="images"
+          id="overview-img"
+          src="./assets/planet-mars.svg"
+          alt="Image of Mars"
+        />
+        <img
+          class="images"
+          id="internal-structure-img"
+          src="./assets/planet-mars-internal.svg"
+          alt="Image of internal structure of Mars"
+        />
+        <div id="relative-positioning">
+          <img
+            id="surface-geology-img"
+            src="./assets/geology-earth.png"
+            alt="geology of Mars"
+          />
+        </div>
+      </div>
+      <div id="description">
+        <h1>Mars</h1>
+        <div id="overview">
+          <!-- Overview Content Start -->
 
-  <!-- Overview Content Start -->
+          <p id="text-description">
+            Mars is the fourth planet from the Sun and the second-smallest
+            planet in the Solar System, being larger than only Mercury. In
+            English, Mars carries the name of the Roman god of war and is often
+            referred to as the "Red Planet".
+          </p>
 
-  Mars is the fourth planet from the Sun and the second-smallest planet 
-  in the Solar System, being larger than only Mercury. In English, Mars 
-  carries the name of the Roman god of war and is often referred to as 
-  the "Red Planet".
+          <p class="source">
+            Source : <a href="https://en.wikipedia.org/wiki/Mars">Wikipedia </a>
+          </p>
+        </div>
+        <!-- Overview Content End -->
+        <div id="structure">
+          <!-- Internal Structure Content Start -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
+          <p class="internal-structure">
+            Like Earth, Mars has differentiated into a dense metallic core
+            overlaid by less dense materials. Scientists initially determined
+            that the core is at least partially liquid. Current models of its
+            interior imply a core consisting primarily of iron and nickel with
+            about 16–17% sulfur.
+          </p>
 
-  <!-- Overview Content End -->
+          <p class="source">
+            Source :
+            <a href="https://en.wikipedia.org/wiki/Mars#Internal_structure"
+              >Wikipedia</a
+            >
+          </p>
+        </div>
+        <!-- Internal Structure Content End -->
+        <div id="geology">
+          <!-- Surface Geology Content Start -->
+          <p class="surface-geology">
+            Mars is a terrestrial planet whose surface consists of minerals
+            containing silicon and oxygen, metals, and other elements that
+            typically make up rock. The surface is primarily composed of
+            tholeiitic basalt, although parts are more silica-rich than typical
+            basalt.
+          </p>
 
-  <!-- Internal Structure Content Start -->
+          <p class="source">
+            Source :
+            <a href="https://en.wikipedia.org/wiki/Mars#Surface_geology"
+              >Wikipedia</a
+            >
+          </p>
 
-  Like Earth, Mars has differentiated into a dense metallic core overlaid 
-  by less dense materials. Scientists initially determined that the core 
-  is at least partially liquid. Current models of its interior imply a 
-  core consisting primarily of iron and nickel with about 16–17% sulfur.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mars is a terrestrial planet whose surface consists of minerals containing 
-  silicon and oxygen, metals, and other elements that typically make up rock. 
-  The surface is primarily composed of tholeiitic basalt, although parts are 
-  more silica-rich than typical basalt.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  1.03 Days
-
-  Revolution Time
-  1.88 Years
-
-  Radius
-  3,389.5 KM
-
-  Average Temp.
-  -28°c
-</body>
+          <!-- Surface Geology Content End -->
+          <ul class="menu">
+            <li id="showOverview">
+              <h3><span class="number">01</span> Overview</h3>
+            </li>
+            <li id="showStructure">
+              <h3><span class="number">02</span> Internal Structure</h3>
+            </li>
+            <li id="showGeology">
+              <h3><span class="number">03</span> Surface Geology</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="data">
+      <div class="data-individual">
+        <p>Rotation Time</p>
+        <h2>1.03 Days</h2>
+      </div>
+      <div class="data-individual">
+        <p>Revolution Time</p>
+        <h2>1.88 Years</h2>
+      </div>
+      <div class="data-individual">
+        <p>Radius</p>
+        <h2>3,389.5 KM</h2>
+      </div>
+      <div class="data-individual">
+        <p>Average Temp.</p>
+        <h2>-28°c</h2>
+      </div>
+    </div>
+  </body>
 </html>
