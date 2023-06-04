@@ -1,62 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Jupiter
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/app.js" defer></script>
 
-  <!-- Overview Content Start -->
+    <title>Planets fact site</title>
+  </head>
+  <body>
+    <header>
+      <h2>The Planets</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Mercury</a></li>
+          <li><a href="venus.html">Venus</a></li>
+          <li><a href="earth.html">Earth</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="saturn.html">Saturn</a></li>
+          <li><a href="uranus.html">Uranus</a></li>
+          <li><a href="neptune.html">Neptune</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main-section">
+      <div id="img">
+        <img
+          class="images"
+          id="overview-img"
+          src="./assets/planet-jupiter.svg"
+          alt="Image of Jupiter"
+        />
+        <img
+          class="images"
+          id="internal-structure-img"
+          src="./assets/planet-jupiter-internal.svg"
+          alt="Image of internal structure of Jupiter"
+        />
+        <div id="relative-positioning">
+          <img
+            id="surface-geology-img"
+            src="./assets/geology-mars.png"
+            alt="geology of Jupiter"
+          />
+        </div>
+      </div>
+      <div id="description">
+        <h1>Jupiter</h1>
+        <div id="overview">
+          <!-- Overview Content Start -->
 
-  Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
-  It is a gas giant with a mass two and a half times that of all the other 
-  planets in the Solar System combined, but less than one-thousandth the mass 
-  of the Sun.
+          <p id="text-description">
+            Jupiter is the fifth planet from the Sun and the largest in the
+            Solar System. It is a gas giant with a mass two and a half times
+            that of all the other planets in the Solar System combined, but less
+            than one-thousandth the mass of the Sun.
+          </p>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
+          <p class="source">
+            Source :<a href="https://en.wikipedia.org/wiki/Jupiter">
+              Wikipedia</a
+            >
+          </p>
+        </div>
+        <!-- Overview Content End -->
+        <div id="structure">
+          <!-- Internal Structure Content Start -->
 
-  <!-- Overview Content End -->
+          <p class="internal-structure">
+            When the Juno arrived in 2016, it found that Jupiter has a very
+            diffuse core that mixes into its mantle. A possible cause is an
+            impact from a planet of about ten Earth masses a few million years
+            after Jupiter's formation, which would have disrupted an originally
+            solid Jovian core.
+          </p>
 
-  <!-- Internal Structure Content Start -->
+          <p class="source">
+            Source :
+            <a href="https://en.wikipedia.org/wiki/Jupiter#Internal_structure"
+              >Wikipedia</a
+            >
+          </p>
 
-  When the Juno arrived in 2016, it found that Jupiter has a very diffuse core 
-  that mixes into its mantle. A possible cause is an impact from a planet of 
-  about ten Earth masses a few million years after Jupiter's formation, which 
-  would have disrupted an originally solid Jovian core.
+          <!-- Internal Structure Content End -->
+        </div>
+        <div id="geology">
+          <!-- Surface Geology Content Start -->
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Internal_structure -->
+          <p class="surface-geology">
+            The best known feature of Jupiter is the Great Red Spot, a
+            persistent anticyclonic storm located 22° south of the equator. It
+            is known to have existed since at least 1831, and possibly since
+            1665.
+          </p>
 
-  <!-- Internal Structure Content End -->
+          <p class="source">
+            Source :
+            <a
+              href=" https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices"
+            >
+              Wikipedia</a
+            >
+          </p>
 
-  <!-- Surface Geology Content Start -->
-
-  The best known feature of Jupiter is the Great Red Spot, a persistent 
-  anticyclonic storm located 22° south of the equator. It is known to have 
-  existed since at least 1831, and possibly since 1665.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  9.93 Hours
-
-  Revolution Time
-  11.86 Years
-
-  Radius
-  69,911 KM
-
-  Average Temp.
-  -108°c
-</body>
+          <!-- Surface Geology Content End -->
+        </div>
+        <ul class="menu">
+          <li id="showOverview">
+            <h3><span class="number">01</span> Overview</h3>
+          </li>
+          <li id="showStructure">
+            <h3><span class="number">02</span> Internal Structure</h3>
+          </li>
+          <li id="showGeology">
+            <h3><span class="number">03</span> Surface Geology</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="data">
+      <div class="data-individual">
+        <p>Rotation Time</p>
+        <h2>9.93 Hours</h2>
+      </div>
+      <div class="data-individual">
+        <p>Revolution Time</p>
+        <h2>11.86 Years</h2>
+      </div>
+      <div class="data-individual">
+        <p>Radius</p>
+        <h2>69,911 KM</h2>
+      </div>
+      <div class="data-individual">
+        <p>Average Temp.</p>
+        <h2>-108°c</h2>
+      </div>
+    </div>
+  </body>
 </html>
