@@ -5,59 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/app.js" defer></script>
+  <title>Planets fact site</title>
 </head>
 <body>
-  Saturn
-
-  <!-- Overview Content Start -->
-
+  <header>
+    <h2>The Planets</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Mercury</a></li>
+        <li><a href="venus.html">Venus</a></li>
+        <li><a href="earth.html">Earth</a></li>
+        <li><a href="mars.html">Mars</a></li>
+        <li><a href="jupiter.html">Jupiter</a></li>
+        <li><a href="saturn.html">Saturn</a></li>
+        <li><a href="uranus.html">Uranus</a></li>
+        <li><a href="neptune.html">Neptune</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="main-section">
+    <div id="img">
+      <img
+        class="images"
+        id="overview-img"
+        src="./assets/planet-saturn.svg"
+        alt="Image of Saturn"
+      />
+      <img
+        class="images"
+        id="internal-structure-img"
+        src="./assets/planet-saturn-internal.svg"
+        alt="Image of internal structure of Saturn"
+      />
+      <div id="relative-positioning">
+        <img
+          id="surface-geology-img"
+          src="./assets/geology-saturn.png"
+          alt="geology of Saturn"
+        />
+      </div>
+    </div>
+    <div id="description">
+      <h1>Saturn</h1>
+      <div id="overview">
+      <p id="text-description">
   Saturn is the sixth planet from the Sun and the second-largest in the Solar 
   System, after Jupiter. It is a gas giant with an average radius of about 
   nine and a half times that of Earth. It only has one-eighth the average 
-  density of Earth.
+  density of Earth.</p>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn -->
+  <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Saturn">Wikipedia </a></p>
 
   <!-- Overview Content End -->
-
+      </div>
+      <div id="structure">
   <!-- Internal Structure Content Start -->
-
+  <p class="internal-structure">
   Despite consisting mostly of hydrogen and helium, most of Saturn's mass 
   is not in the gas phase, because hydrogen becomes a non-ideal liquid 
   when the density is above 0.01 g/cm3, which is reached at a radius 
-  containing 99.9% of Saturn's mass.
+  containing 99.9% of Saturn's mass.</p>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Internal_structure -->
-
+  <p class="source">Source : <a href="https://en.wikipedia.org/wiki/Saturn#Internal_structure">Wikipedia </a></p>
   <!-- Internal Structure Content End -->
-
+      </div>
+      <div id="geology">
   <!-- Surface Geology Content Start -->
-
+        <p class="surface-geology">
   The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
   helium by volume. The planet's most famous feature is its prominent ring 
   system, which is composed mostly of ice particles with a smaller amount 
-  of rocky debris and dust. 
+  of rocky debris and dust. </p>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Saturn#Atmosphere -->
-
+  <p>Source : <a href="https://en.wikipedia.org/wiki/Saturn#Atmosphere">Wikipedia</a></p>
   <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  10.8 Hours
-
-  Revolution Time
-  29.46 Years
-
-  Radius
-  58,232 KM
-
-  Average Temp.
-  -138°c
+      </div>
+      <ul class="menu">
+        <li id="showOverview">
+          <h3><span class="number">01</span> Overview</h3>
+        </li>
+        <li id="showStructure">
+          <h3><span class="number">02</span> Internal Structure</h3>
+        </li>
+        <li id="showGeology">
+          <h3><span class="number">03</span> Surface Geology</h3>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="data">
+    <div class="data-individual">
+      <p>Rotation Time</p>
+      <h2>10.8 Hours</h2>
+    </div>
+    <div class="data-individual">
+      <p>Revolution Time</p>
+      <h2>29.46 Days</h2>
+    </div>
+    <div class="data-individual">
+      <p>Radius</p>
+      <h2>58,232 KM</h2>
+    </div>
+    <div class="data-individual">
+      <p>Average Temp.</p>
+      <h2>-138°c</h2>
+    </div>
+  </div>
 </body>
 </html>
