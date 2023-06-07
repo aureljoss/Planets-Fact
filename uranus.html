@@ -1,107 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <script src="scripts/app.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/app.js" defer></script>
 
-  <title>Planets fact site</title>
-</head>
-<body>
-  <header>
-    <h2>The Planets</h2>
-    <nav>
-      <ul>
-        <li><a href="index.html">Mercury</a></li>
-        <li><a href="venus.html">Venus</a></li>
-        <li><a href="earth.html">Earth</a></li>
-        <li><a href="mars.html">Mars</a></li>
-        <li><a href="jupiter.html">Jupiter</a></li>
-        <li><a href="saturn.html">Saturn</a></li>
-        <li><a href="uranus.html">Uranus</a></li>
-        <li><a href="neptune.html">Neptune</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div id="main-section">
-    <div id="img">
-      <img
-        class="images"
-        id="overview-img"
-        src="./assets/planet-mercury.svg"
-        alt="Image of Mercury"
-      />
-      <img
-        class="images"
-        id="internal-structure-img"
-        src="./assets/planet-mercury-internal.svg"
-        alt="Image of internal structure of Mercury"
-      />
-      <div id="relative-positioning">
+    <title>Planets fact site</title>
+  </head>
+  <body>
+    <header>
+      <h2>The Planets</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Mercury</a></li>
+          <li><a href="venus.html">Venus</a></li>
+          <li><a href="earth.html">Earth</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="saturn.html">Saturn</a></li>
+          <li><a href="uranus.html">Uranus</a></li>
+          <li><a href="neptune.html">Neptune</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main-section">
+      <div id="img">
         <img
-          id="surface-geology-img"
-          src="./assets/geology-mercury.png"
-          alt="geology of mercury"
+          class="images"
+          id="overview-img"
+          src="./assets/planet-mercury.svg"
+          alt="Image of Mercury"
         />
+        <img
+          class="images"
+          id="internal-structure-img"
+          src="./assets/planet-mercury-internal.svg"
+          alt="Image of internal structure of Mercury"
+        />
+        <div id="relative-positioning">
+          <img
+            id="surface-geology-img"
+            src="./assets/geology-mercury.png"
+            alt="geology of mercury"
+          />
+        </div>
+      </div>
+      <div id="description">
+        <h1>Uranus</h1>
+
+        <!-- Overview Content Start -->
+        <div id="overview">
+          <p id="text-description">
+            Uranus is the seventh planet from the Sun. Its name is a reference
+            to the Greek god of the sky, Uranus according to Greek mythology,
+            was the great-grandfather of Ares. It has the third-largest
+            planetary radius and fourth-largest planetary mass in the Solar
+            System.
+          </p>
+
+          <p class="source">
+            Source :
+            <a href="https://en.wikipedia.org/wiki/Uranus"> Wikipedia </a>
+          </p>
+        </div>
+        <!-- Overview Content End -->
+
+        <!-- Internal Structure Content Start -->
+        <div id="structure">
+          <p class="internal-structure">
+            The standard model of Uranus's structure is that it consists of
+            three layers: a rocky (silicate/iron–nickel) core in the centre, an
+            icy mantle in the middle and an outer gaseous hydrogen/helium
+            envelope. The core is relatively small, with a mass of only 0.55
+            Earth masses.
+          </p>
+
+          <p class="source">
+            Source :
+            <a href="https://en.wikipedia.org/wiki/Uranus#Internal_structure">
+              Wikipedia</a
+            >
+          </p>
+
+          <!-- Internal Structure Content End -->
+        </div>
+        <!-- Surface Geology Content Start -->
+        <div id="geology">
+          <p class="surface-geology">
+            The composition of Uranus's atmosphere is different from its bulk,
+            consisting mainly of molecular hydrogen and helium. The helium molar
+            fraction, i.e. the number of helium atoms per molecule of gas, is
+            0.15±0.03 in the upper troposphere.
+          </p>
+
+          <p class="source">
+            Source :
+            <a href="https://en.wikipedia.org/wiki/Uranus#Atmosphere"
+              >Wikipedia
+            </a>
+          </p>
+
+          <!-- Surface Geology Content End -->
+        </div>
+        <ul class="menu">
+          <li id="showOverview">
+            <h3><span class="number">01</span> Overview</h3>
+          </li>
+          <li id="showStructure">
+            <h3><span class="number">02</span> Internal Structure</h3>
+          </li>
+          <li id="showGeology">
+            <h3><span class="number">03</span> Surface Geology</h3>
+          </li>
+        </ul>
       </div>
     </div>
-  Uranus
-
-  <!-- Overview Content Start -->
-
-  Uranus is the seventh planet from the Sun. Its name is a reference to the 
-  Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather 
-  of Ares. It has the third-largest planetary radius and fourth-largest planetary 
-  mass in the Solar System.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  The standard model of Uranus's structure is that it consists of three layers: a 
-  rocky (silicate/iron–nickel) core in the centre, an icy mantle in the middle and 
-  an outer gaseous hydrogen/helium envelope. The core is relatively small, with a 
-  mass of only 0.55 Earth masses.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The composition of Uranus's atmosphere is different from its bulk, consisting mainly 
-  of molecular hydrogen and helium. The helium molar fraction, i.e. the number of 
-  helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Uranus#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  17.2 Hours
-
-  Revolution Time
-  84 Years
-
-  Radius
-  25,362 KM
-
-  Average Temp.
-  -195°c
-</body>
+    <div class="data">
+      <div class="data-individual">
+        <p>Rotation Time</p>
+        <h2>17.2 Hours</h2>
+      </div>
+      <div class="data-individual">
+        <p>Revolution Time</p>
+        <h2>84 Years</h2>
+      </div>
+      <div class="data-individual">
+        <p>Radius</p>
+        <h2>25,362 KM</h2>
+      </div>
+      <div class="data-individual">
+        <p>Average Temp.</p>
+        <h2>-195°c</h2>
+      </div>
+    </div>
+  </body>
 </html>
