@@ -33,7 +33,6 @@ showOverview.addEventListener("click", () => {
   } else {
     showOverview.style.backgroundColor = "#2D68F0";
   }
-
   showGeology.style.backgroundColor = "";
   showStructure.style.backgroundColor = "";
 });
@@ -45,7 +44,23 @@ showStructure.addEventListener("click", () => {
   overview.style.display = "none";
   internal.style.display = "block";
   surface.style.display = "none";
-  showStructure.style.backgroundColor = "rgb(65, 158, 187)";
+  if (planet.textContent === "Mercury") {
+    showStructure.style.backgroundColor = "rgb(65, 158, 187)";
+  } else if (planet.textContent === "Venus") {
+    showStructure.style.backgroundColor = "rgb(237, 162, 73)";
+  } else if (planet.textContent === "Earth") {
+    showStructure.style.backgroundColor = "#6D2ED5";
+  } else if (planet.textContent === "Mars") {
+    showStructure.style.backgroundColor = "#D14C32";
+  } else if (planet.textContent === "Jupiter") {
+    showStructure.style.backgroundColor = "#D83A34";
+  } else if (planet.textContent === "Saturn") {
+    showStructure.style.backgroundColor = "#D14C32";
+  } else if (planet.textContent === "Uranus") {
+    showStructure.style.backgroundColor = "#1EC1A2";
+  } else {
+    showStructure.style.backgroundColor = "#2D68F0";
+  }
   showOverview.style.backgroundColor = "";
   showGeology.style.backgroundColor = "";
 });
@@ -57,7 +72,23 @@ showGeology.addEventListener("click", () => {
   overview.style.display = "block";
   internal.style.display = "none";
   surface.style.display = "block";
-  showGeology.style.backgroundColor = "rgb(65, 158, 187)";
+  if (planet.textContent === "Mercury") {
+    showGeology.style.backgroundColor = "rgb(65, 158, 187)";
+  } else if (planet.textContent === "Venus") {
+    showGeology.style.backgroundColor = "rgb(237, 162, 73)";
+  } else if (planet.textContent === "Earth") {
+    showGeology.style.backgroundColor = "#6D2ED5";
+  } else if (planet.textContent === "Mars") {
+    showGeology.style.backgroundColor = "#D14C32";
+  } else if (planet.textContent === "Jupiter") {
+    showGeology.style.backgroundColor = "#D83A34";
+  } else if (planet.textContent === "Saturn") {
+    showGeology.style.backgroundColor = "#D14C32";
+  } else if (planet.textContent === "Uranus") {
+    showGeology.style.backgroundColor = "#1EC1A2";
+  } else {
+    showGeology.style.backgroundColor = "#2D68F0";
+  }
   showStructure.style.backgroundColor = "";
   showOverview.style.backgroundColor = "";
 });
