@@ -8,6 +8,20 @@ const showOverview = document.getElementById("showOverview");
 const showStructure = document.getElementById("showStructure");
 const showGeology = document.getElementById("showGeology");
 const planet = document.getElementById("planet");
+const navigation=document.getElementById("navigation");
+
+navigation.addEventListener('mouseover', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.style.color = 'red';
+    event.stopPropagation();
+  }
+}, true);
+navigation.addEventListener('mouseout', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.style.removeProperty('color');
+  }
+}, true);
+
 
 showOverview.addEventListener("click", () => {
   description.style.display = "block";
